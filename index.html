@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-slide">
+                <img src="DSC_0411.JPG" alt="Image 1" onerror="this.src='image1.jpg';">
+            </div>
+            <div class="carousel-slide">
+                <img src="DSC_0435.JPG" alt="Image 2" onerror="this.src='fallback.jpg';">
+            </div>
+            <div class="carousel-slide">
+                <img src="DSC_0710.JPG" alt="Image 3" onerror="this.src='fallback.jpg';">
+            </div>
+        </div>
+        <button class="carousel-control prev">&#10094;</button>
+        <button class="carousel-control next">&#10095;</button>
+        <div class="carousel-indicators">
+            <span class="indicator" data-slide="0"></span>
+            <span class="indicator" data-slide="1"></span>
+            <span class="indicator" data-slide="2"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
